@@ -18,6 +18,7 @@ const signupHandler = async (req, res) => {
     const savedUser = await newUser.save(); // to add something
     res.status(201).json(savedUser);
   } catch (err) {
+    console.error("Signup error:", err);
     res.status(500).json({ message: "Error creating user" });
   }
 };
