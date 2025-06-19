@@ -32,3 +32,4 @@ const loginHandler = async (req, res) => {
 };
 
 module.exports = loginHandler;
+// This code handles user login by verifying the user's phone number and password.
